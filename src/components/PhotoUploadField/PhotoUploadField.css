@@ -1,0 +1,108 @@
+.photo-upload-field {
+  display: grid;
+  gap: 8px;
+}
+
+.photo-upload-input {
+  display: none;
+}
+
+.photo-preview {
+  min-height: 64px;
+  border: 1px dashed #aeb9c5;
+  border-radius: 8px;
+  background: white;
+  color: var(--muted);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  text-align: center;
+  padding: 8px;
+}
+
+.photo-preview.small {
+  max-width: 180px;
+  aspect-ratio: 4 / 3;
+}
+
+.photo-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capture-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: end;
+}
+
+.camera-panel {
+  width: min(760px, calc(100vw - 32px));
+  max-height: calc(100vh - 64px);
+  padding: 18px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.camera-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.camera-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.camera-header button {
+  min-width: 92px;
+}
+
+.camera-status {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+#cameraVideo,
+#cameraCanvas {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #111923;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.captured-preview {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #111923;
+}
+
+.camera-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  background: #0b1113;
+  color: #cbd5d6;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}

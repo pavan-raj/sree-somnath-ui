@@ -1,0 +1,10 @@
+.billing-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.bill-total {
+  margin-top: 18px;
+  text-align: right;
+  font-size: 22px;
+}

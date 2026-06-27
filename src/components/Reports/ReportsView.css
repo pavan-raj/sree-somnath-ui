@@ -1,0 +1,16 @@
+.report-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.report-lines {
+  display: grid;
+  gap: 11px;
+}
+
+.report-line {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+}

@@ -1,0 +1,234 @@
+.receipt-dialog {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.receipt-panel {
+  width: min(860px, calc(100vw - 32px));
+  max-height: calc(100vh - 48px);
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.25);
+}
+
+.receipt-scroll {
+  max-height: calc(100vh - 170px);
+  overflow: auto;
+  padding: 28px 28px 0;
+}
+
+.receipt-header-large {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 26px 28px;
+  margin: 0 0 24px;
+  border: 1px solid #dde6e5;
+  border-radius: 18px;
+  background: #f5fbfa;
+}
+
+.receipt-header-large h2 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #0f4f52;
+}
+
+.receipt-number-card {
+  min-width: 170px;
+  padding: 18px 22px;
+  border-radius: 18px;
+  border: 1px solid #dde6e5;
+  background: #eef8f6;
+  text-align: center;
+}
+
+.receipt-number-card span {
+  display: block;
+  color: #4f6d70;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.receipt-number-card strong {
+  display: block;
+  font-size: 24px;
+  color: #133d41;
+}
+
+.receipt-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.receipt-summary-card div {
+  border: 1px solid #dde6e5;
+  border-radius: 14px;
+  padding: 16px 16px;
+  background: #f5fbfa;
+}
+
+.receipt-summary-card strong,
+.receipt-summary strong {
+  display: block;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.receipt-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 18px 24px 24px;
+  border-top: 1px solid #e8eef2;
+  background: #fafbfc;
+}
+
+.receipt {
+  padding: 26px;
+  background: white;
+}
+
+.receipt-header {
+  border: 2px solid var(--brand);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.receipt h2 {
+  font-size: 26px;
+  margin-bottom: 6px;
+  color: var(--brand-dark);
+  text-transform: uppercase;
+}
+
+.receipt h3 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: #344053;
+}
+
+.receipt-number {
+  min-width: 150px;
+  background: #eef6f5;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.receipt-number span,
+.receipt-summary span,
+.photo-box span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.receipt-number strong {
+  display: block;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.receipt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 22px;
+  flex: 1;
+}
+
+.receipt-line {
+  border-bottom: 1px solid #d8dee6;
+  padding-bottom: 8px;
+}
+
+.receipt-line span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.receipt-section {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.receipt-with-photo {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.photo-box {
+  width: 180px;
+  flex: 0 0 180px;
+  border: 1px dashed #9babb9;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f8fafb;
+}
+
+.photo-box img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-top: 8px;
+  border: 1px solid var(--line);
+}
+
+.photo-box small,
+.photo-empty {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.terms-box {
+  margin: 18px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.signature-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 22px;
+}
+
+.signature-row span {
+  display: block;
+  min-height: 72px;
+  border-top: 1px solid #d8dee6;
+  padding-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+}

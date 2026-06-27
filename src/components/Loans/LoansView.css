@@ -1,0 +1,20 @@
+.mini-section {
+  display: grid;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  background: #fbfcfd;
+}
+
+.mini-section h3 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--brand-dark);
+}
+
+.helper-text {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}

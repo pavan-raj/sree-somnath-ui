@@ -1,0 +1,154 @@
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.content {
+  min-width: 0;
+  padding: 26px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.search {
+  max-width: 300px;
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(300px, 410px) minmax(0, 1fr);
+  gap: 16px;
+}
+
+.workspace.single {
+  grid-template-columns: 1fr;
+}
+
+.form-panel {
+  display: grid;
+  gap: 13px;
+  align-content: start;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.table-wrap {
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+th {
+  background: #f0f4f7;
+  color: #4a5568;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.badge.open {
+  background: #e8f4f1;
+  color: var(--brand-dark);
+}
+
+.badge.overdue {
+  background: #fde9e6;
+  color: var(--danger);
+}
+
+.badge.closed {
+  background: #eceff3;
+  color: #4d5968;
+}
+
+.badge.sold {
+  background: #fff2d9;
+  color: #8d5e0b;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+}
+
+.list-item {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.list-item strong {
+  display: block;
+}
+
+.list-item span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.row-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.row-actions button {
+  padding: 8px 10px;
+  font-size: 12px;
+}
